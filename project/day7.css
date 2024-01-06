@@ -1,0 +1,13 @@
+a{
+    color: hsl(207, 44%, 49%);
+}
+a:visited{
+    color: pink;
+}
+a:hover, a:focus{
+    color: hsl(207, 44%, 49%, 0.8);
+    background-color: gold;
+}
+a:active{
+    color: aqua;
+}

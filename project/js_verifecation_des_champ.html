@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tajrba 2.css" />
+    <title>Document</title>
+</head>
+
+<body> <img src="../css/tt.webp"
+    id="img" alt="An Example Image" />
+
+    <form name="f" action="..." onsubmit="return verif()">
+
+
+        <p>
+            Veuillez saisir une valeur</p> <br>
+        <input type="text" name="T1" id="T1"> <br>
+        <br>
+        choisir une couleur <br>
+        <input type="button" name="c" id="c1" value="red"> Rouge <br>
+        <input type="button" name="c" id="c2" value="green"> Vert <br>
+        <input type="button" name="c" id="c3" value="yellow"> Jaune <br>
+        <br>
+        Choisir un billet<br>
+        <input type="button" name="b" id="b1" value="10"> 10 dinars <br>
+        <input type="button" name="b" id="b2" value="20"> 20 dinars <br>
+        <br>
+        Choisir vos centres d'intérêt<br>
+        <input type="checkbox" name="mu" id="mu" value="Musique"> Musique <br>
+        <input type="checkbox" name="th" id="th" value="Théatre"> Théatre <br>
+        <input type="checkbox" name="des" id="des" value="Dessin"> Dessin<br>
+        <br>
+        Choisir une matière<br>
+        <select name="matiere" id="matiere">
+            <option value=""></option>
+            <option value="m">Math</option>
+            <option value="ph">Physique</option>
+            <option value="an">Anglais</option>
+        </select> <br>
+        <br>
+        <input type="button" value="Valider" onclick="verif()">
+    </form>
+    <script>
+        var x = 0
+
+        function verif() {
+            x = x + 1
+            console.log("Verif", x);
+
+            // A terminer les vérifications
+            // .....
+            // .....
+            // .....
+
+        }
+    </script>
+</body>
+
+</html>

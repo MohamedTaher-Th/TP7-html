@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // alert("je teste le JS");
+
+
+        function tester() {
+            essai = 0;
+            var nb = document.getElementById("nb").value; //25
+            if (essai >= 3) {
+                alert("vous avez atteint la limite");
+                document.getElementById("nb").disabled = true;
+
+            } else if (nb >= 20 && nb <= 30) {
+                alert("nombre valide ");
+                essai = 0;
+            } else {
+                alert("erreur ");
+                essai = essai + 1;
+            }
+            console.log("essai= ", essai);
+        }
+
+        /*for (essi = 1; essi <= 3; essi++) {
+
+            alert("essi" + essi);
+            console.log("essi= ", essi);
+        }*/
+    </script>
+    <meta charset="UTF-8">
+    <title>tp8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Incription</h1>
+    <from action="sauvegarder.html" name="mon-premir_formulaire" method="GET">
+        <fieldset class="infop">
+            <legend>information personnelles</legend>
+            <table>
+                <tr>
+                    <td>nombre:</td>
+                    <td><input type="text" name="nombre" id="nb"></td>
+                </tr>
+                <tr>
+                    <td>nom:</td>
+                    <td><input type="text" name="nom" id="n"></td>
+                </tr>
+                <TR>
+                    <td>prenom:</td>
+                    <td><input type="text" name="prenom" id="p"></td>
+                </TR>
+                <tr>
+                    <td>Date de naissances:</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>sexe:</td>
+                    <td><input type="radio" name="sexe" value="masculin">masculin<br>
+                        <input type="radio" name="sexe" value="feminin">feminin<br>
+                    </td>
+                </tr>
+                <tr></tr>
+                <td>Adress Email:</td>
+                <td><input type="email" name="email">
+                </td>
+                <tr>
+                    <td>Adress;<br></td>
+                    <td><textarea name="Adress" cols="25" rows="3">
+            </textarea></tD>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <fieldset class="infos">
+            <legend>information supplemantaire</legend>
+            <table>
+                <TR>
+                    <td>section:<br></td>
+                    <td><select name="list" size="1">
+                            <option selected>Sciences d'informatique </option>
+                            <option>Economie et service</option>
+                            <option>sciences</option>
+                            <option>lettres</option>
+                        </select></Td>
+                </TR>
+                <TR>
+                    <TD>Loisirs:</TD>
+                    <TD>
+                        <input type="checkbox" name="option1" value="sport">Musique<br>
+                        <input type="checkbox" name="option2" value="Musique">théatre<br>
+                        <input type="checkbox" name="option3" value="dessin ">dessin<br>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>Votre photo jpg,png,bmp..:<br></TD>
+                    <TD><input name="fichier" type="file"></TD>
+                </TR>
+                <TR>
+                    <TD></TD>
+                    <TD><input type="button" value="envoyer" onclick="tester()"></TD>
+                </TR>
+
+                <TD></TD>
+                <TD><input type="reset" value="annuler"></TD>
+                </TR>
+            </table>
+        </fieldset>
+    </from>
+
+
+</body>
+
+</html>

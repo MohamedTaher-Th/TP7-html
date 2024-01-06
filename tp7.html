@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>tp7</title>
+    <link rel="stylesheet" href="Tp7.css" />
+
+</head>
+
+<body>
+    <h1>
+        <center>inscription</center>
+    </h1>
+    <form action="#" name="mon_premier_formulaire" methode="#">
+        <fieldset class="info">
+            <legend class="infos">information personnels</legend>
+            <table border="">
+                <tr>
+                    <td>nom:</td>
+                    <td> <input type="text" name="nom" maxlenght="30" id="name"></td>
+                </tr>
+                <tr>
+                    <td>prenon:</td>
+                    <td> <input type="text" name="prenom" maxlength="30" id="prenom"></td>
+                </tr>
+                <tr>
+                    <td>date de naissance:</td>
+                    <td> <input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>sexe:</td>
+                    <td> <input type="radio" name="sexe" value="masculin">masculin</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="sexe" value="feminin"> feminin</td>
+                </tr>
+                <tr>
+                    <td>adresse email:</td>
+                    <td> <input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>adresss :
+                        </p>
+                    </td>
+                    <td><textarea name="adresse" cols="30" rows="3"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend class="infos">Informations supplémentaires</legend>
+            <p>
+                <P>section:<br></P>
+                <select name="liste" size="1">
+                    <option selected>science de l`informatique </option>
+                    <option>economie et services</option>
+                    <option>science</option>
+                    <option>lettre</option>
+                </select>
+                <p>loisirs:</p>
+                <input type="checkbox" name="option1" value="Sport"> msuique <br>
+                <input type="checkbox" name="option2" value="musique ">theatre<br>
+                <input type="checkbox" name="option3" value="dessin">dessin<br>
+            </p>
+            <p> votre photo jpj,png,bmp...:<input name=" file" type="file" size="35"><br></p>
+
+
+            <div class="btn">
+                <p> <input type="submit" value="envoyer" onclick="affichage()"></p>
+                <p> <input type="reset" value="Annuler"></p>
+            </div>
+        </fieldset>
+
+        <table border="1">
+            <tr>
+                <td style="color: red;"> gojo saturo </td>
+                <td style="background-color: hsl(234, 81%, 48%);">monkey d luffy</td>
+            </tr>
+            <tr>
+                <td>gojo saturo</td>
+
+            </tr>
+        </table>
+
+
+    </form>
+
+
+    <script>
+        alert("je test le JS");
+
+        function affichage() {
+            name = document.getElementById("name").value;
+            prenom = document.getElementById("prenom").value;
+            alert("ohayo " + name + " " + prenom)
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

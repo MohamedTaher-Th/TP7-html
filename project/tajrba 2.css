@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+}
+#c1{
+    font-size: 14px;
+    color: red;
+    transition: font-size-color;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+
+#c2:hover  {
+    font-size: 14px;
+    color: red;
+    transition: font-size-color;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+#c3{
+    display: inline-block;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    background: red;
+    text-align: center;
+    color: white;
+    border: 2px inset white;
+    font-weight: bold;
+    transition: width 2s, height 4s;
+}
+#c3:hover{
+    height: 20px;
+    background: pink;
+}
+#b1{
+    width: px;
+    height: 250px;
+    padding: 5px;
+    box-shadow:5px 5px gray;
+    border:2px inset red;
+    border-radius: 170px;
+    background-color: #dfdfdf;
+    color: #039;
+}
+img{
+    filter: grayscale(100%);
+}
+#b2{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    transition: width 2s, height 4s;
+    position: absolute;
+    animation-name:none;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
